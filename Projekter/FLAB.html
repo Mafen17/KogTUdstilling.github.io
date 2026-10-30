@@ -162,18 +162,12 @@ header{
     position:absolute;
     left:50px;
     top:0;
-
-    width:0;
-    height:0;
 }
 
 .logo img{
     height:100px;
 
-    position:absolute;
-
-    top:5px;
-    left:0;
+    display:block;
 
     transform:rotate(8deg);
 
@@ -182,12 +176,8 @@ header{
     cursor:pointer;
 }
 
-.logo img:hover{
-    transform:rotate(-64deg);
-}
-
 .logo img.spin{
-    animation:spinLogo .9s cubic-bezier(.25,.8,.25,1);
+    animation:spinLogo 1s ease;
 }
 
 @keyframes spinLogo{
@@ -199,9 +189,11 @@ header{
     100%{
         transform:rotate(295deg);
     }
-
 }
 
+.logo img:hover{
+    transform:rotate(-64deg);
+}
 /* MENU */
 
 .nav-links{
