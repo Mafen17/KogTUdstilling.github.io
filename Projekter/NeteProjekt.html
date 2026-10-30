@@ -6,9 +6,10 @@
 
 <title>Netes Projekt</title>
 
-<link rel="icon" type="image/png" href="../Logo.png">
+<link rel="icon" type="image/png" href="../logo.png">
 
 <style>
+
 
 :root{
     --black:#111111;
@@ -31,6 +32,97 @@ body{
     background:var(--light);
     color:var(--black);
     overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        justify-content:center;
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+    }
+
+    .logo{
+        position:relative;
+        left:0;
+    }
+
+    .logo img{
+        position:relative;
+
+        top:0;
+
+        height:75px;
+    }
+
+    .nav-links{
+
+        margin-top:15px;
+
+        display:grid;
+
+        grid-template-columns:repeat(2,auto);
+
+        gap:10px 20px;
+
+        justify-content:center;
+
+        text-align:center;
+    }
+
+    .back-arrow{
+
+        font-size:32px;
+
+        left:25px;
+
+        top:75px;
+    }
+
+    .project-hero{
+
+        height:50vh;
+
+        margin-top:140px;
+    }
+
+    .project-header{
+
+        padding:0 25px;
+
+        margin:60px auto;
+    }
+
+    .project-header h1{
+
+        font-size:2.5rem;
+    }
+
+    .project-content{
+
+        padding:0 25px 80px;
+    }
+
+    .gallery{
+
+        padding:0 25px 80px;
+
+        grid-template-columns:1fr;
+    }
+
+    .social-links a{
+
+        width:40px;
+        height:40px;
+    }
+
 }
 
 /* ---------------- NAVBAR ---------------- */
@@ -335,36 +427,6 @@ footer p{
     height:24px;
 }
 
-/* MOBILE */
-
-@media(max-width:1000px){
-
-    .nav-links{
-        gap:15px;
-        flex-wrap:wrap;
-    }
-
-    .logo img{
-        height:80px;
-    }
-
-    .back-arrow{
-        left:115px;
-        top:55px;
-    }
-
-    .gallery{
-
-        grid-template-columns:1fr;
-    }
-
-    .project-header,
-    .project-content{
-        padding:0 30px;
-    }
-
-}
-
 /* ---------- LIGHTBOX ---------- */
 
 .lightbox{
@@ -427,7 +489,7 @@ footer p{
 
 <div class="logo">
     <a href="../index.html" id="logoLink">
-        <img src="../Logo.png" alt="Logo" id="logo">
+        <img src="../logo.png" alt="Logo" id="logo">
     </a>
 </div>
 
