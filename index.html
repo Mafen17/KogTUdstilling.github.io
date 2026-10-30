@@ -78,22 +78,18 @@ header{
     position:absolute;
     left:50px;
     top:0;
-
-    width:0;
-    height:0;
 }
 
 .logo img{
     height:100px;
 
-    position:absolute;
-
-    top:5px;
-    left:0;
+    display:block;
 
     transform:rotate(8deg);
 
     transition:.4s ease;
+
+    cursor:pointer;
 }
 
 .logo img.spin{
@@ -573,17 +569,27 @@ footer p{
         padding:20px;
     }
 
-    .logo{
+     .logo{
+
         position:relative;
+
         left:0;
+
+        width:auto;
+
+        height:auto;
     }
 
     .logo img{
+
         position:relative;
 
         top:0;
+        left:0;
 
         height:75px;
+
+        display:block;
     }
 
     .nav-links{
